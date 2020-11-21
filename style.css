@@ -98,7 +98,7 @@ nav a {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -108,7 +108,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav.responsive {
     position: relative;
     display: block;
