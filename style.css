@@ -1,163 +1,111 @@
+html {
+  background: url(./img/cover_img.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+  height: 100%;
+}
 
 body {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
+/* General Layout */
 .container {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:  1fr 8fr auto 1fr;
-    height:100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 30vw auto 5vw;
+  height: 100%;
 }
-
-.zone {
-    /* padding:30px 50px;
-    margin:40px 60px; */
-    cursor:pointer;
-    
-    color:#FFF;
-    font-size:2em;
-    
-   
-    transition: all 0.3s linear;
-
-}
-
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
-
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
-.green{
-    background: #69726c; /* Old browsers */
-    background: -moz-linear-gradient(top, #69726c 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #69726c 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #69726c 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #69726c 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #69726c 0%,#a5c956 100%); /* W3C */
-   
-    display: grid;
-    grid-template-columns: auto auto auto 1fr;
-}
-
-nav {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-}
-
-.green a {
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-    margin-left: 10px;
-    transition: all 1s;
-}
-
-.green a:hover{
-    color:gray;
-}
-
-#home {
- grid-column: 1/2;
-}
-
-#history {
-    grid-column: 2/3;
-
-}
-
-#products {
-    grid-column: 3/4;
-
-}
-
-#about {
-    grid-column: 4/5;
-    justify-self: right;
-}
-
-/***********************************************************************
- *  Red Background
- **********************************************************************/
-.red{
-    background-image: url(./img/cover_img.jpg) ;
-    background-size: cover;
-    background-position: 0px ;
-}
-
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
-.blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
-}
-
 
 .header {
-    grid-row: 1/2;
+  grid-row: 1/2;
 }
 
 .cover {
-    grid-row: 2/3;
+  grid-row: 2/3;
+  /* background-image: url(./img/cover_img.jpg);
+  background-position: 0px;
+  background-size: cover; */
 }
 
 .grid {
-    grid-row: 3/4;
-    display: flex;
-    justify-content: space-around;
-    
-    flex-wrap: wrap;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer {
-    grid-row: 4/5;
+  grid-row: 4/5;
 }
 
-.item  {
-    background-color: rgba(41, 59, 109, 0.9);
-    box-shadow: 2px 2px 1px rgba(0,0,0,0.5);
-    padding: 50px;
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    transition: all 0.5s;
+nav {
+  z-index: 2;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+nav {
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+  }
+}
+
+nav a svg:hover {
+  transform: scale(1.05);
+}
+/* Right Alignment of icons in nav elements */
+.push {
+  margin-left: auto;
+}
+
+.item {
+  background-color: rgba(77, 84, 104, 0.7);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  margin: 20px;
+
+  width: 80%;
+  transition: all 0.5s;
+  text-align: center;
+  font-size: 1em;
 }
 
 .item:hover {
-    box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
-    transform: scale(1.05);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  transform: rotate3d();
 }
 
-cover, img {
-    background-image: url(./img/cover_img.jpg);
+.footer {
+  position: static;
+  bottom: 0px;
 }
